@@ -1,0 +1,5 @@
+large devices (laptops/desktop, 992px and up)
+small devices (phones, 600px and down)
+tablet responsive optional.
+
+No lorem ipsam and bad color selection
