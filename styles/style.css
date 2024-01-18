@@ -255,7 +255,7 @@ a:hover {
 
 .hotel {
     width: 573px;
-    height: 184px;
+    height: 185px;
     border-radius: 16px;
     border: 1px solid rgba(251, 181, 99, 0.20);
     background: #FBB5630D;
@@ -263,7 +263,7 @@ a:hover {
 
 .service {
     width: 573px;
-    height: 184px;
+    height: 185px;
     border-radius: 16px;
     border: 1px solid rgba(41, 206, 246, 0.20);
     background: rgba(41, 206, 246, 0.05);
@@ -273,18 +273,39 @@ a:hover {
     margin-top: 24px;
     margin-left: 100px;
     width: 573px;
-    height: 184px;
+    height: 185px;
     border-radius: 16px;
     border: 1px solid rgba(233, 68, 68, 0.20);
     background: rgba(233, 68, 68, 0.05);
 }
-.deals{
+
+.deals {
     margin: 100px;
+    padding: 0 135px;
+    margin: 70px;
 }
 
+.bgimg-1 {
+    background-image: url(../Images/deals1.png);
+}
 
+.bgimg-2 {
+    background-image: url(../Images/deals2.png);
+}
+
+.bgimg-3 {
+    background-image: url(../Images/deals1.png);
+}
+.see-btn{
+    background-color: #FF5400;
+    color: #fff;
+    height: 50px;
+    width: 170px;
+    border-radius: 6px;
+}
 
 @media screen and (min-width: 600px) and (max-width: 992px) {
+    .body
     .container {
         flex-direction: column;
     }
