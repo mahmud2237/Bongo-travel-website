@@ -10,11 +10,12 @@ font-family: Mulish; */
     font-family: "Mulish", sans-serif;
     text-decoration: none;
     align-items: center;
+    text-align: center;
 }
 
 body,
 html {
-    width: 100%;
+    width: 1280;
     height: 100%;
     font-family: "Mulish", sans-serif;
     margin: 0;
@@ -38,6 +39,7 @@ label.logo {
 .primary-color {
     color: #FF5400;
 }
+
 nav ul {
     float: right;
     /* margin-left: -125px; */
@@ -86,38 +88,146 @@ a:hover {
     color: #fff;
     align-items: center;
     justify-content: space-around;
-    margin: 0 80px;
+    margin: 0 135px;
     border-radius: 20px;
-
+    height: 500px;
+    overflow: hidden;
 }
 
 .first-img h1 {
+    position: relative;
     padding: 130px;
     text-align: center;
     font-size: 65px;
 }
 
 .first-img p {
+    position: absolute;
     text-align: center;
     padding: 20px;
+    margin-top: -140px;
 }
 
 .white-bg {
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.30);
-    width: 580px;
-    height: 50px;
-    margin: 150px;
+    width: 740px;
+    height: 65px;
+    margin: 40px;
+    margin-left: 190px;
+    padding: 8px;
     align-items: center;
     justify-content: center;
 }
-.input-btn input button{
+
+.input-btn {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
-.input-btn button{
-    color: #FF5400;
+
+.input-btn button {
+    background-color: #FF5400;
+    color: #fff;
+    height: 50px;
+    width: 170px;
+    border-radius: 6px;
+
+}
+
+.input-btn input {
+    height: 50px;
+    width: 170px;
+    border-radius: 6px;
+}
+
+.popular-tour {
+    display: flex;
+    margin: 100px;
+    gap: 40px;
+}
+
+.popular-tour-details {
+    justify-content: space-between;
+}
+
+.popular-tour-details button {
+    background-color: #FF5400;
+    color: #fff;
+    height: 40px;
+    width: 150px;
+    border-radius: 6px;
+}
+
+/* .popular-tour-img{
+
+} */
+
+/* .destination {} */
+.destination-description {
+    padding: 0 135px;
+    margin: 70px;
+    color: #131318;
+    text-align: center;
+    font-weight: 800;
+}
+
+.destination-gallery {
+    display: grid;
+    padding: 0 135px;
+    margin: 70px;
+    gap: 1rem;
+    grid-template-columns: repeat(12, 1fr);
+    grid-row: repeat(3, 1fr);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.destination-gallery img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.item{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    border-radius: 28px;
+}
+.item-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item-1{
+    grid-column: auto/span 6;
+}
+.item-2{
+    grid-column: auto/span 6;
+}
+.item-3{
+    grid-column: auto/span 4;
+}
+.item-4{
+    grid-column: auto/span 5;
+}
+.item-5{
+    grid-column: auto/span 3;
+}
+.item-6{
+    grid-column: auto/span 5;
+}
+.item-7{
+    grid-column: auto/span 7;
 }
 
 
@@ -130,9 +240,18 @@ a:hover {
 }
 
 @media screen and (max-width: 600px) {
+
+    body,
+    html {
+        width: 100%;
+        height: 100%;
+        font-family: "Mulish", sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
     .container {
-        flex-direction: column;
-        /* grid-template-columns: repeat(1, 1fr); */
+        flex-direction: row;
     }
 
     #checkbtn {
@@ -150,7 +269,11 @@ a:hover {
     nav ul li {
         display: block;
         text-align: center;
-        
+
+    }
+
+    .first-img {
+        flex-direction: row;
     }
 
 }
