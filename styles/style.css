@@ -282,18 +282,28 @@ a:hover {
 .deals {
     margin: 100px;
     padding: 0 135px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.deals .deals-bg{
+    margin-top: 45px;
+    margin-left: -335px;
+    gap: 65px;
+}
+.deals button{
+    margin-top: 35px;
+}
+.bg-1 {
+    
 }
 
-.bgimg-1 {
-    background-image: url(../Images/deals1.png);
+.bg-2 {
+    
 }
 
-.bgimg-2 {
-    background-image: url(../Images/deals2.png);
-}
-
-.bgimg-3 {
-    background-image: url(../Images/deals1.png);
+.bg-3 {
+    
 }
 
 .see-btn {
